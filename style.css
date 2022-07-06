@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --color-main: #ffffff;
+    --bg2: #8bce94;
+    --bg: #a7f5ad;
+    --main-accent: #dce3e4;
+    --main-text: #4b5876;
+    --shadow: rgba(17, 17, 26, 0.1) 2px 2px 16px;
+    --text-color: rgb(112, 112, 112);
+    --text-green: rgb(146, 234, 171);
+    --text-yellow: rgb(175, 177, 186);
+    --o3: rgb(129, 120, 111);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+html, .sidebar, .main-content{
+    background-color: var(--bg2);
+}
+
+
+body {
+    background: var(--bg2);
+    
+}
+#menu-toggle{
+    display: none;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+.sidebar{
+    width: 345px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 1rem 1.2rem;
+
+}
+
+.sidebar-container{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 1.2rem;
+}
+.brand h2{
+    color: #444;
+}
+
+.brand h2 span{
+    color: var(--color-main);
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-right: .5rem;
+    
+}
+
+.sidebar-avartar{
+    display: grid;
+    grid-template-columns: 60px auto;
+    align-items: center;
+    border: 1px solid var(--main-accent);
+    padding: .4rem;
+    border-radius: 7px;
+    margin: 2rem 0rem;
+}
+
+.avartar-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar-menu li{
+    margin-bottom: 0.2rem;
+}
+
+.sidebar-menu a{
+    color: var(--main-text);
+    display: block;
+    padding: 0.1rem 0rem;
+}
+
+.current{
+    background: var(--text-green);
+    padding: .8rem;
+    border-radius: 7px;
+}
+
+.side-nav:hover{
+    background: var(--main-accent);
+  
+    border-radius: 7px;
+}
+
+.sidebar-menu a span:first-child{
+    display: inline-block;
+    margin-right: .8rem;
+    font-size: 1.5rem;
+    color: var(--color-main);
+}
+
+.btn {
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.btn span {
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: .7rem;
+}
+.bt-block{
+    display: block;
+    width: 100%;
+}
+
+.btn-main{
+    background: var(--color-main);
+    color: #fff;
+}
+.main-content{
+    margin-left: 345px;
+    width: calc(100vw - 345px);
+    padding: 1rem 1.2rem;
+  
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title-wrapper {
+    display: flex;
+   
+}
+.header-title-wrapper label{
+    display: inline-block;
+    color: var(--color-main);
+    margin-right: 1rem;
+    font-size: 1.8rem;
+}
+.head-title h1{
+    color: var(--main-text);
+    font-weight: 600;
+}
+
+.head-title p{
+    color: #666;
+    font-size: .9rem;
+
+}   
+
+.header-title p span{
+    color: red;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-left: .5rem;
+}
+
+.header-action button{
+    padding: .1rem .3rem;
+    font-size: 1.2rem;
+}
+main{
+    padding-top: 3rem;
+}
+
+.analytics{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0rem 2.5rem;
+}
+
+.analytic{
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    padding-left: 2rem;
+}
+.analytic-info h4{
+    font-weight: 400;
+    color: #555;
+    font-size: .98rem;
+    margin-bottom: .5rem;
+}
+.analytic-info h1{
+    color:var (--main-text);
+    font-weight: 600;
+}
+.analytic-info h1 small{
+    font-size: .8rem;
+    font-weight: 700;
+}
+.text-danger{
+    color: red;
+}
+.text-success{
+    color: #2ec3a3;
+}
+
+.analytic:first-child .analytic-icon{
+    background: #dcefff;
+    color: #6883db;
+}
+.analytic:nth-child(2) .analytic-icon{
+    background: #ebf75f;
+    color: #6883db;
+}
+.analytic:nth-child(3) .analytic-icon{
+    background: #ebf75f;
+    color: #6883db;
+}
+.analytic:nth-child(4) .analytic-icon{
+    background: #ebf75f;
+    color: #6883db;
+}
+.analytic-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-right: .8rem;
+}
+
