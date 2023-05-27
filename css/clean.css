@@ -1,0 +1,95 @@
+.ui-table {
+border-collapse: collapse;
+width: 100%;
+margin: 1em 0;
+background-color: #fff;
+border: 1px solid #ddd;
+font-size: 0.9em;
+}
+
+.ui-table thead {
+background-color: #f2f2f2;
+}
+
+.ui-table thead th {
+padding: 12px 15px;
+text-align: left;
+border-bottom: 2px solid #ddd;
+}
+
+.ui-table tbody tr:nth-of-type(odd) {
+background-color: #f9f9f9;
+}
+
+.ui-table tbody tr:nth-of-type(even) {
+background-color: #fff;
+}
+
+.ui-table tbody td {
+padding: 12px 15px;
+border-bottom: 1px solid #ddd;
+}
+
+.ui-table thead th:first-child {
+border-top-left-radius: 5px;
+}
+
+.ui-table thead th:last-child {
+border-top-right-radius: 5px;
+}
+
+.ui-table tbody td:first-child {
+border-top-left-radius: 5px;
+}
+
+.ui-table tbody td:last-child {
+border-top-right-radius: 5px;
+}
+
+.ui-table-controls {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 1em;
+}
+
+.ui-table-controls span {
+font-size: 0.8em;
+padding: 0.5em;
+cursor: pointer;
+color: #666;
+}
+
+.ui-table-controls span:hover {
+color: #333;
+}
+
+.ui-table-controls span.disabled {
+cursor: not-allowed;
+color: #ccc;
+}
+
+.ui-columns-search {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+margin-bottom: 1em;
+}
+
+.ui-columns-search input[type="text"] {
+width: 200px;
+padding: 0.5em;
+border-radius: 5px;
+border: 1px solid #ddd;
+background-color: #fff;
+background-image: url("../images/search.png");
+background-repeat: no-repeat;
+background-position: 10px center;
+font-size: 0.9em;
+transition: border-color 0.2s ease-in-out;
+}
+
+.ui-columns-search input[type="text"]:focus {
+outline: none;
+border-color: #6196cd;
+}

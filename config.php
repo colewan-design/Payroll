@@ -1,21 +1,9 @@
 <?php
-/* Database credentials. Assuming you are running MySQL
-server with default setting (user 'root' with no password) */
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'crud');
-
- 
-/* Attempt to connect to MySQL database */
-$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
- 
-// Check connection
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
 
 
-
+$dbHost = "bsu-info.tech";
+$dbUsername = "u455679702_cps";
+$dbPassword = "OpK3RKh]!h9";
+$dbName = "u455679702_cps";
+$dbc= mysqli_connect($dbHost, $dbUsername, $dbPassword, $dbName); 
 ?>
-
